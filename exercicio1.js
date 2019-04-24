@@ -1,2 +1,7 @@
 // Faça o exercício dos parágrafos aqui
-// Este arquivo ainda não está incluído no arquivo HTML
+document.querySelectorAll('.botao-expandir-retrair').forEach( function(item) {
+    item.addEventListener('click', function() {
+        item.parentElement.classList.toggle("expandido")
+        item.innerHTML = item.innerHTML === "+" ? "-" : "+"
+    })
+})
